@@ -1,0 +1,25 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+.input-label {
+  color: var(--smokeyGrey);
+  font-weight: 400i;
+  font-size: 12px;
+  font-family: "poppins";
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+input {
+  width: 90px;
+  font-size: 20px;
+  border: 1px solid var(--lightGrey);
+  border-radius: 10px;
+  padding: 11px 10px;
+  font-weight: 800;
+  margin-left: 2px;
+  outline: none;
+}
+input::placeholder {
+  color: var(--smokeyGrey);
+}

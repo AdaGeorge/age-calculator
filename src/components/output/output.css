@@ -1,0 +1,16 @@
+.results-container {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.result {
+  font-size: 55px;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: lowercase;
+  line-height: 55px;
+}
+.result span {
+  color: var(--purple);
+  font-size: 55px;
+  margin-right: 5px;
+}

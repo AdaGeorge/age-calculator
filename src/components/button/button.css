@@ -1,0 +1,20 @@
+.btn-container {
+  position: relative;
+  border: 0.5px solid var(--lightGrey);
+  width: 95%;
+  margin: 60px auto;
+}
+.btn {
+  position: absolute;
+  top: -30px;
+  left: 40%;
+  width: 21%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--purple);
+}
+.btn img {
+  width: 26px;
+  padding-top: 5px;
+}
