@@ -7,14 +7,35 @@
 .btn {
   position: absolute;
   top: -30px;
-  left: 40%;
-  width: 21%;
+  left: 110px;
+  width: 65px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: none;
   background-color: var(--purple);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--offBlack);
 }
 .btn img {
   width: 26px;
   padding-top: 5px;
+}
+
+@media (min-width: 700px) {
+  .btn-container {
+    margin: 50px auto;
+    width: 100%;
+  }
+  .btn {
+    top: -50px;
+    left: auto;
+    right: 0;
+    width: 100px;
+  }
+  .btn img {
+    width: 50px;
+  }
 }

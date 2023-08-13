@@ -11,6 +11,12 @@
 }
 .result span {
   color: var(--purple);
-  font-size: 55px;
   margin-right: 5px;
+}
+
+@media (min-width: 700px) {
+  .result {
+    font-size: 110px;
+    line-height: 110px;
+  }
 }

@@ -19,7 +19,22 @@ input {
   font-weight: 800;
   margin-left: 2px;
   outline: none;
+  cursor: pointer;
+}
+input:focus {
+  outline: 1px solid var(--purple);
 }
 input::placeholder {
   color: var(--smokeyGrey);
+}
+@media (min-width: 700px) {
+  input {
+    width: 180px;
+    font-size: 32px;
+    padding: 13px 18px;
+  }
+  .input-label {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
 }

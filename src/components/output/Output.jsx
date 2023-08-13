@@ -5,13 +5,13 @@ const Output = () => {
   return (
     <section className="results-container">
       <h2 className="result">
-        <span>{"38"}</span>Years
+        <span>{"--"}</span>Years
       </h2>
       <h2 className="result">
-        <span>{"3"}</span>Months
+        <span>{"--"}</span>Months
       </h2>
       <h2 className="result">
-        <span>{"26"}</span>Days
+        <span>{"--"}</span>Days
       </h2>
     </section>
   );

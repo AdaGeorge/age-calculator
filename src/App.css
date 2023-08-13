@@ -12,3 +12,13 @@
   padding: 20px;
   border-bottom-right-radius: 100px;
 }
+
+@media (min-width: 700px) {
+  .App {
+    height: 100vh;
+  }
+  .card-ages {
+    padding: 30px 60px;
+    border-bottom-right-radius: 250px;
+  }
+}
