@@ -37,6 +37,7 @@ input::placeholder {
   font-style: italic;
   margin-top: 10px;
   color: var(--lightRed);
+  font-size: 10px;
 }
 @media (min-width: 700px) {
   input {
@@ -47,5 +48,8 @@ input::placeholder {
   .input-label {
     font-size: 14px;
     letter-spacing: 4px;
+  }
+  .err-message {
+    font-size: 15px;
   }
 }
