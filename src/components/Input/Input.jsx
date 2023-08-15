@@ -25,6 +25,7 @@ const Input = ({
         className={`${errors[label] && "err-input"}`}
         type="text"
         placeholder={placeholder}
+        //if there's no pattern or max it's undefined
         {...register(label, {
           required,
           pattern: pattern,

@@ -29,16 +29,19 @@ const Form = ({ setTime }) => {
     return true;
   };
 
+  //Function that calculates the time past
   const calculateTime = (date) => {
     const dayInPast = new Date(date.YEAR, date.MONTH, date.DAY);
     const today = new Date();
 
     let timePast = today - dayInPast;
 
+    //Variables - type of time
     const days = 86400000;
     const months = days * 30.416666666666668;
     const years = months * 12;
 
+    //dividing the time past first in years, we get the months and lastly the days
     const yearsPast = Math.floor(timePast / years);
     setTime((prevValue) => ({ ...prevValue, years: yearsPast }));
     timePast = timePast - yearsPast * years;
@@ -49,6 +52,7 @@ const Form = ({ setTime }) => {
     setTime((prevValue) => ({ ...prevValue, days: daysPast }));
   };
 
+  //Validate and calculate functions
   const submit = (data) => {
     if (validateDate(data)) {
       calculateTime(data);
