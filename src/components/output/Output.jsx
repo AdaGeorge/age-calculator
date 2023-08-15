@@ -1,17 +1,18 @@
 import React from "react";
 import "./output.css";
 
-const Output = () => {
+const Output = ({ date }) => {
+  const { years, months, days } = date;
   return (
     <section className="results-container">
       <h2 className="result">
-        <span>{"--"}</span>Years
+        <span>{years}</span>Years
       </h2>
       <h2 className="result">
-        <span>{"--"}</span>Months
+        <span>{months}</span>Months
       </h2>
       <h2 className="result">
-        <span>{"--"}</span>Days
+        <span>{days}</span>Days
       </h2>
     </section>
   );

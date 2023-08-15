@@ -19,7 +19,6 @@ input {
   font-weight: 800;
   margin-left: 2px;
   outline: none;
-  cursor: pointer;
 }
 input:focus {
   outline: 1px solid var(--purple);
