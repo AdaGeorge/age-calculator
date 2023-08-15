@@ -26,6 +26,18 @@ input:focus {
 input::placeholder {
   color: var(--smokeyGrey);
 }
+.err-input {
+  outline: 1px solid var(--lightRed);
+}
+.err-label {
+  color: var(--lightRed);
+}
+.err-message {
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 10px;
+  color: var(--lightRed);
+}
 @media (min-width: 700px) {
   input {
     width: 180px;

@@ -12,8 +12,17 @@ const Input = ({
 }) => {
   return (
     <div className="form-input">
-      {label && <label className="input-label">{label}</label>}
+      {label && (
+        <label
+          className={`${
+            errors[label] ? "err-label input-label" : "input-label"
+          }`}
+        >
+          {label}
+        </label>
+      )}
       <input
+        className={`${errors[label] && "err-input"}`}
         type="text"
         placeholder={placeholder}
         {...register(label, {
